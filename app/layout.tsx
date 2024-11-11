@@ -4,7 +4,6 @@ import { ThemeProvider } from "next-themes";
 import React from "react";
 
 import "./globals.css";
-import Navbar from "@/components/navigation/navbar";
 
 
 
@@ -42,7 +41,6 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <Navbar />
         {children}
         </ThemeProvider>
       </body>
